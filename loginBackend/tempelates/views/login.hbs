@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+    <div class="max-w-md w-full p-6 bg-white rounded-lg shadow-md">
+
+        <h2 class="text-2xl font-semibold mb-6 text-center">Sign In</h2>
+
+        <form action="login" method="post">
+            <div class="mb-4">
+                <label for="username" class="block text-gray-600  font-medium">Username</label>
+                <input type="text" id="username" name="username" class="form-input outline-none mt-1 block w-full" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-600 font-medium">Password</label>
+                <input type="password" id="password" name="password" class="form-input outline-none mt-1 block w-full" required>
+            </div>
+
+            <div class="mb-6">
+                <label for="remember" class="flex items-center">
+                    <input type="checkbox" id="remember" name="remember" class="form-checkbox">
+                    <span class="ml-2 text-gray-600">Remember Me</span>
+                </label>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-green-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue active:bg-blue-700">
+                    Login
+                </button>
+
+                <a href="register" class="text-blue-500 hover:underline">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
